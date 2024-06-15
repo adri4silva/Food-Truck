@@ -23,8 +23,15 @@
 		57C1958C2C1D6B8500B82CEF /* FlavorProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C1958B2C1D6B8500B82CEF /* FlavorProfile.swift */; };
 		57C1958E2C1D6BC600B82CEF /* Image+FlavorSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C1958D2C1D6BC600B82CEF /* Image+FlavorSymbol.swift */; };
 		57C195902C1D6C0D00B82CEF /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C1958F2C1D6C0D00B82CEF /* Ingredient.swift */; };
+		57C195922C1D6D4100B82CEF /* TruckModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C195912C1D6D4100B82CEF /* TruckModel.swift */; };
+		57C195962C1D6EB300B82CEF /* TruckDonutsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C195952C1D6EB300B82CEF /* TruckDonutsCard.swift */; };
+		57C195992C1D6F7400B82CEF /* DonutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C195982C1D6F7400B82CEF /* DonutView.swift */; };
 		57C1959B2C1D781D00B82CEF /* DonutLatticeLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C1959A2C1D781D00B82CEF /* DonutLatticeLayout.swift */; };
 		57C1959D2C1D784C00B82CEF /* DonutLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C1959C2C1D784C00B82CEF /* DonutLayer.swift */; };
+		57C1959F2C1D796C00B82CEF /* DonutGalleryGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C1959E2C1D796C00B82CEF /* DonutGalleryGrid.swift */; };
+		57C195A12C1D7A6B00B82CEF /* DonutGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C195A02C1D7A6B00B82CEF /* DonutGallery.swift */; };
+		57C195A32C1D8AA500B82CEF /* NavigationPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C195A22C1D8AA500B82CEF /* NavigationPath.swift */; };
+		57C195A62C1DAA8700B82CEF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C195A52C1DAA8700B82CEF /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,8 +71,15 @@
 		57C1958B2C1D6B8500B82CEF /* FlavorProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlavorProfile.swift; sourceTree = "<group>"; };
 		57C1958D2C1D6BC600B82CEF /* Image+FlavorSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+FlavorSymbol.swift"; sourceTree = "<group>"; };
 		57C1958F2C1D6C0D00B82CEF /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		57C195912C1D6D4100B82CEF /* TruckModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckModel.swift; sourceTree = "<group>"; };
+		57C195952C1D6EB300B82CEF /* TruckDonutsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckDonutsCard.swift; sourceTree = "<group>"; };
+		57C195982C1D6F7400B82CEF /* DonutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutView.swift; sourceTree = "<group>"; };
 		57C1959A2C1D781D00B82CEF /* DonutLatticeLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutLatticeLayout.swift; sourceTree = "<group>"; };
 		57C1959C2C1D784C00B82CEF /* DonutLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutLayer.swift; sourceTree = "<group>"; };
+		57C1959E2C1D796C00B82CEF /* DonutGalleryGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutGalleryGrid.swift; sourceTree = "<group>"; };
+		57C195A02C1D7A6B00B82CEF /* DonutGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutGallery.swift; sourceTree = "<group>"; };
+		57C195A22C1D8AA500B82CEF /* NavigationPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPath.swift; sourceTree = "<group>"; };
+		57C195A52C1DAA8700B82CEF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +130,7 @@
 		57C195502C1D63B700B82CEF /* FoodTruck */ = {
 			isa = PBXGroup;
 			children = (
+				57C195A42C1DA9FC00B82CEF /* Settings */,
 				57C195822C1D6A9C00B82CEF /* Models */,
 				57C1957F2C1D665B00B82CEF /* Helpers */,
 				57C1957B2C1D64F000B82CEF /* Truck */,
@@ -154,8 +169,12 @@
 		57C1957B2C1D64F000B82CEF /* Truck */ = {
 			isa = PBXGroup;
 			children = (
+				57C195972C1D6F6800B82CEF /* Donuts */,
+				57C195942C1D6E9D00B82CEF /* DonutsCard */,
 				57C195532C1D63B700B82CEF /* ContentView.swift */,
+				57C195912C1D6D4100B82CEF /* TruckModel.swift */,
 				57C1957C2C1D64F900B82CEF /* TruckHeader */,
+				57C195A22C1D8AA500B82CEF /* NavigationPath.swift */,
 			);
 			path = Truck;
 			sourceTree = "<group>";
@@ -190,6 +209,32 @@
 				57C1958F2C1D6C0D00B82CEF /* Ingredient.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		57C195942C1D6E9D00B82CEF /* DonutsCard */ = {
+			isa = PBXGroup;
+			children = (
+				57C195952C1D6EB300B82CEF /* TruckDonutsCard.swift */,
+			);
+			path = DonutsCard;
+			sourceTree = "<group>";
+		};
+		57C195972C1D6F6800B82CEF /* Donuts */ = {
+			isa = PBXGroup;
+			children = (
+				57C195982C1D6F7400B82CEF /* DonutView.swift */,
+				57C1959E2C1D796C00B82CEF /* DonutGalleryGrid.swift */,
+				57C195A02C1D7A6B00B82CEF /* DonutGallery.swift */,
+			);
+			path = Donuts;
+			sourceTree = "<group>";
+		};
+		57C195A42C1DA9FC00B82CEF /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				57C195A52C1DAA8700B82CEF /* SettingsView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,16 +367,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57C195922C1D6D4100B82CEF /* TruckModel.swift in Sources */,
 				57C1957E2C1D651E00B82CEF /* TruckHeader.swift in Sources */,
 				57C1959D2C1D784C00B82CEF /* DonutLayer.swift in Sources */,
 				57C1959B2C1D781D00B82CEF /* DonutLatticeLayout.swift in Sources */,
+				57C195992C1D6F7400B82CEF /* DonutView.swift in Sources */,
+				57C195A62C1DAA8700B82CEF /* SettingsView.swift in Sources */,
 				57C1958A2C1D6B6000B82CEF /* Topping.swift in Sources */,
+				57C1959F2C1D796C00B82CEF /* DonutGalleryGrid.swift in Sources */,
+				57C195A12C1D7A6B00B82CEF /* DonutGallery.swift in Sources */,
 				57C195862C1D6AEA00B82CEF /* Dough.swift in Sources */,
 				57C195542C1D63B700B82CEF /* ContentView.swift in Sources */,
+				57C195962C1D6EB300B82CEF /* TruckDonutsCard.swift in Sources */,
 				57C195842C1D6AA600B82CEF /* Donut.swift in Sources */,
 				57C195812C1D666A00B82CEF /* Interpolation.swift in Sources */,
 				57C195882C1D6B4600B82CEF /* Glaze.swift in Sources */,
 				57C1958E2C1D6BC600B82CEF /* Image+FlavorSymbol.swift in Sources */,
+				57C195A32C1D8AA500B82CEF /* NavigationPath.swift in Sources */,
 				57C1958C2C1D6B8500B82CEF /* FlavorProfile.swift in Sources */,
 				57C195522C1D63B700B82CEF /* FoodTruckApp.swift in Sources */,
 				57C195902C1D6C0D00B82CEF /* Ingredient.swift in Sources */,
