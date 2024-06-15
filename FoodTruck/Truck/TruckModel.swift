@@ -40,7 +40,7 @@ final class FoodTruckModel {
     }
     
     func toggleFavourite(donut: Donut) {
-        if let _ = favouriteDonuts[donut.id] {
+        if isFavourite(donut: donut) {
             favouriteDonuts.removeValue(forKey: donut.id)
             return
         }

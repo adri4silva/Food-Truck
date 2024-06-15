@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57BFF1BC2C1DB99B0097F477 /* TruckModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BFF1BB2C1DB99B0097F477 /* TruckModelTests.swift */; };
 		57C195522C1D63B700B82CEF /* FoodTruckApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C195512C1D63B700B82CEF /* FoodTruckApp.swift */; };
 		57C195542C1D63B700B82CEF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C195532C1D63B700B82CEF /* ContentView.swift */; };
 		57C195562C1D63B800B82CEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57C195552C1D63B800B82CEF /* Assets.xcassets */; };
 		57C195592C1D63B800B82CEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57C195582C1D63B800B82CEF /* Preview Assets.xcassets */; };
-		57C195632C1D63B800B82CEF /* FoodTruckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C195622C1D63B800B82CEF /* FoodTruckTests.swift */; };
 		57C1956D2C1D63B800B82CEF /* FoodTruckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C1956C2C1D63B800B82CEF /* FoodTruckUITests.swift */; };
 		57C1956F2C1D63B800B82CEF /* FoodTruckUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C1956E2C1D63B800B82CEF /* FoodTruckUITestsLaunchTests.swift */; };
-		57C195632C1D63B800B82CEF /* TruckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C195622C1D63B800B82CEF /* TruckTests.swift */; };
 		57C1957E2C1D651E00B82CEF /* TruckHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C1957D2C1D651E00B82CEF /* TruckHeader.swift */; };
 		57C195812C1D666A00B82CEF /* Interpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C195802C1D666A00B82CEF /* Interpolation.swift */; };
 		57C195842C1D6AA600B82CEF /* Donut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C195832C1D6AA600B82CEF /* Donut.swift */; };
@@ -33,7 +32,6 @@
 		57C195A12C1D7A6B00B82CEF /* DonutGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C195A02C1D7A6B00B82CEF /* DonutGallery.swift */; };
 		57C195A32C1D8AA500B82CEF /* NavigationPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C195A22C1D8AA500B82CEF /* NavigationPath.swift */; };
 		57C195A62C1DAA8700B82CEF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C195A52C1DAA8700B82CEF /* SettingsView.swift */; };
-		57C195A92C1DB59300B82CEF /* Testing in Frameworks */ = {isa = PBXBuildFile; productRef = 57C195A82C1DB59300B82CEF /* Testing */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,13 +52,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		57BFF1BB2C1DB99B0097F477 /* TruckModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckModelTests.swift; sourceTree = "<group>"; };
 		57C1954E2C1D63B700B82CEF /* FoodTruck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTruck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57C195512C1D63B700B82CEF /* FoodTruckApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckApp.swift; sourceTree = "<group>"; };
 		57C195532C1D63B700B82CEF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		57C195552C1D63B800B82CEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57C195582C1D63B800B82CEF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		57C1955E2C1D63B800B82CEF /* FoodTruckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodTruckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		57C195622C1D63B800B82CEF /* TruckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckTests.swift; sourceTree = "<group>"; };
 		57C195682C1D63B800B82CEF /* FoodTruckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodTruckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57C1956C2C1D63B800B82CEF /* FoodTruckUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckUITests.swift; sourceTree = "<group>"; };
 		57C1956E2C1D63B800B82CEF /* FoodTruckUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -96,7 +94,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57C195A92C1DB59300B82CEF /* Testing in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,7 +152,7 @@
 		57C195612C1D63B800B82CEF /* FoodTruckTests */ = {
 			isa = PBXGroup;
 			children = (
-				57C195622C1D63B800B82CEF /* TruckTests.swift */,
+				57BFF1BB2C1DB99B0097F477 /* TruckModelTests.swift */,
 			);
 			path = FoodTruckTests;
 			sourceTree = "<group>";
@@ -276,7 +273,6 @@
 			);
 			name = FoodTruckTests;
 			packageProductDependencies = (
-				57C195A82C1DB59300B82CEF /* Testing */,
 			);
 			productName = FoodTruckTests;
 			productReference = 57C1955E2C1D63B800B82CEF /* FoodTruckTests.xctest */;
@@ -333,7 +329,6 @@
 			);
 			mainGroup = 57C195452C1D63B700B82CEF;
 			packageReferences = (
-				57C195A72C1DB59300B82CEF /* XCRemoteSwiftPackageReference "swift-testing" */,
 			);
 			productRefGroup = 57C1954F2C1D63B700B82CEF /* Products */;
 			projectDirPath = "";
@@ -404,7 +399,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57C195632C1D63B800B82CEF /* TruckTests.swift in Sources */,
+				57BFF1BC2C1DB99B0097F477 /* TruckModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -769,11 +764,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		57C195A82C1DB59300B82CEF /* Testing */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 57C195A72C1DB59300B82CEF /* XCRemoteSwiftPackageReference "swift-testing" */;
-			productName = Testing;
-		};
 		57C195AA2C1DB64F00B82CEF /* Testing */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 57C195A72C1DB59300B82CEF /* XCRemoteSwiftPackageReference "swift-testing" */;
