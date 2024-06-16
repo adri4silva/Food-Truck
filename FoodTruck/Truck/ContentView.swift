@@ -28,6 +28,7 @@ struct ContentView: View {
                         )
                         .onTapGesture {
                             navigation.append(.donuts)
+                            model.donutsCardTapped()
                         }
                         
                         if !model.favouriteDonuts.isEmpty {
@@ -45,7 +46,7 @@ struct ContentView: View {
             .toolbar {
                 ToolbarItem(placement: .primaryAction) { 
                     Button {
-                        model.isSettingsPresented = true
+                        model.settingsButtonTapped()
                     } label: {
                         Image(systemName: "gear")
                             .resizable()
@@ -66,6 +67,7 @@ struct ContentView: View {
             .sheet(isPresented: $model.isSettingsPresented) {
                 SettingsView(model: model)
             }
+            .analyticsScreen(name: "truck_screen")
         }
     }
 }

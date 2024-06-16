@@ -6,14 +6,20 @@
 //
 
 import SwiftUI
+import FirebaseAnalytics
 
 @Observable
 final class FoodTruckModel {
     var donuts: [Int: Donut]
     var favouriteDonuts: [Int: Donut] = [:]
     var searchText: String = ""
-    var isPremiumUser = false
+    var isPremiumUser = false {
+        didSet {
+            handlePremiumAnalytics()
+        }
+    }
     var isSettingsPresented = false
+    let userID = "my_user_id"
     
     var filteredDonuts: [Donut] {
         Array(
@@ -30,6 +36,7 @@ final class FoodTruckModel {
     
     init(donuts: [Donut] = Donut.all) {
         self.donuts = Dictionary(uniqueKeysWithValues: donuts.map { ($0.id, $0) })
+        configureFirebase()
     }
     
     func isFavourite(donut: Donut) -> Bool {
@@ -40,10 +47,53 @@ final class FoodTruckModel {
     }
     
     func toggleFavourite(donut: Donut) {
+        Analytics.logEvent(
+            "donut_toggle_favourite", 
+            parameters: [
+                "donut_id": donut.id,
+                "donut_name": donut.name,
+                "is_favourite": (!isFavourite(donut: donut)).description
+            ]
+        )
         if isFavourite(donut: donut) {
             favouriteDonuts.removeValue(forKey: donut.id)
             return
         }
         favouriteDonuts[donut.id] = donut
+    }
+    
+    func settingsButtonTapped() {
+        isSettingsPresented = true
+        Analytics.logEvent(
+            "settings_button_tapped", 
+            parameters: [
+                "favourite_donuts_count": favouriteDonuts.values.count,
+                "donuts_count": donuts.values.count
+            ]
+        )
+    }
+    
+    func donutsCardTapped() {
+        Analytics.logEvent(
+            "donut_card_tapped", 
+            parameters: [
+                "favourite_donuts_count": favouriteDonuts.values.count,
+                "donuts_count": donuts.values.count
+            ]
+        )
+    }
+    
+    func configureFirebase() {
+        Analytics.setUserID(userID)
+    }
+    
+    func handlePremiumAnalytics() {
+        Analytics.logEvent(
+            "premium_toggle", 
+            parameters: [
+                "toggle_value": isPremiumUser.description,
+            ]
+        )
+        Analytics.setUserProperty(isPremiumUser.description, forName: "is_premium")
     }
 }

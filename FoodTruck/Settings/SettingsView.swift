@@ -46,6 +46,24 @@ struct SettingsView: View {
                 } header: { 
                     Text("Subscription")
                 }
+                
+                Section { 
+                    HStack(spacing: 12) {
+                        Image(systemName: "person.badge.key")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 44, height: 44)
+                            .foregroundStyle(Color.accentColor)
+                        VStack(alignment: .leading) {
+                            Text("User ID")
+                                .font(.headline)
+                            Text(model.userID)
+                                .font(.subheadline)
+                        }
+                    }
+                } header: { 
+                    Text("User Properties")
+                }
 
                 HStack {
                     Text("App Version")
@@ -54,6 +72,7 @@ struct SettingsView: View {
                     Text(model.appVersionNumber)
                 }
             }
+            .analyticsScreen(name: "settings_screen")
         }
     }
 }

@@ -28,6 +28,7 @@ struct DonutGallery: View {
                     width: geometryProxy.size.width
                 )
             }
+            .analyticsScreen(name: "donut_gallery")
         }
     }
 }

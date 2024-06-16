@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		57BFF1BC2C1DB99B0097F477 /* TruckModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BFF1BB2C1DB99B0097F477 /* TruckModelTests.swift */; };
+		57BFF1BE2C1ECF400097F477 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57BFF1BD2C1ECF400097F477 /* GoogleService-Info.plist */; };
+		57BFF1C12C1ECF970097F477 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 57BFF1C02C1ECF970097F477 /* FirebaseAnalytics */; };
+		57BFF1C32C1ECF970097F477 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 57BFF1C22C1ECF970097F477 /* FirebaseAnalyticsSwift */; };
 		57C195522C1D63B700B82CEF /* FoodTruckApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C195512C1D63B700B82CEF /* FoodTruckApp.swift */; };
 		57C195542C1D63B700B82CEF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C195532C1D63B700B82CEF /* ContentView.swift */; };
 		57C195562C1D63B800B82CEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57C195552C1D63B800B82CEF /* Assets.xcassets */; };
@@ -53,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		57BFF1BB2C1DB99B0097F477 /* TruckModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckModelTests.swift; sourceTree = "<group>"; };
+		57BFF1BD2C1ECF400097F477 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		57C1954E2C1D63B700B82CEF /* FoodTruck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTruck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57C195512C1D63B700B82CEF /* FoodTruckApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckApp.swift; sourceTree = "<group>"; };
 		57C195532C1D63B700B82CEF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57BFF1C32C1ECF970097F477 /* FirebaseAnalyticsSwift in Frameworks */,
+				57BFF1C12C1ECF970097F477 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +136,7 @@
 		57C195502C1D63B700B82CEF /* FoodTruck */ = {
 			isa = PBXGroup;
 			children = (
+				57BFF1BD2C1ECF400097F477 /* GoogleService-Info.plist */,
 				57C195A42C1DA9FC00B82CEF /* Settings */,
 				57C195822C1D6A9C00B82CEF /* Models */,
 				57C1957F2C1D665B00B82CEF /* Helpers */,
@@ -253,6 +260,10 @@
 			dependencies = (
 			);
 			name = FoodTruck;
+			packageProductDependencies = (
+				57BFF1C02C1ECF970097F477 /* FirebaseAnalytics */,
+				57BFF1C22C1ECF970097F477 /* FirebaseAnalyticsSwift */,
+			);
 			productName = FoodTruck;
 			productReference = 57C1954E2C1D63B700B82CEF /* FoodTruck.app */;
 			productType = "com.apple.product-type.application";
@@ -329,6 +340,7 @@
 			);
 			mainGroup = 57C195452C1D63B700B82CEF;
 			packageReferences = (
+				57BFF1BF2C1ECF970097F477 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 57C1954F2C1D63B700B82CEF /* Products */;
 			projectDirPath = "";
@@ -348,6 +360,7 @@
 			files = (
 				57C195592C1D63B800B82CEF /* Preview Assets.xcassets in Resources */,
 				57C195562C1D63B800B82CEF /* Assets.xcassets in Resources */,
+				57BFF1BE2C1ECF400097F477 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -753,6 +766,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		57BFF1BF2C1ECF970097F477 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.27.0;
+			};
+		};
 		57C195A72C1DB59300B82CEF /* XCRemoteSwiftPackageReference "swift-testing" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-testing.git";
@@ -764,6 +785,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		57BFF1C02C1ECF970097F477 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57BFF1BF2C1ECF970097F477 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		57BFF1C22C1ECF970097F477 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57BFF1BF2C1ECF970097F477 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
 		57C195AA2C1DB64F00B82CEF /* Testing */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 57C195A72C1DB59300B82CEF /* XCRemoteSwiftPackageReference "swift-testing" */;
