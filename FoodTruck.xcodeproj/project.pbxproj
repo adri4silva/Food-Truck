@@ -19,7 +19,6 @@
 		57A393752C1EED4A0003F244 /* 180.png in Resources */ = {isa = PBXBuildFile; fileRef = 57A393662C1EED490003F244 /* 180.png */; };
 		57A393762C1EED4A0003F244 /* 1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 57A393672C1EED490003F244 /* 1024.png */; };
 		57A393772C1EED4A0003F244 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 57A393682C1EED490003F244 /* Contents.json */; };
-		57A393782C1EED4A0003F244 /* ci_pre_xcodebuild.sh in Resources */ = {isa = PBXBuildFile; fileRef = 57A3936A2C1EED490003F244 /* ci_pre_xcodebuild.sh */; };
 		57BFF1BC2C1DB99B0097F477 /* TruckModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BFF1BB2C1DB99B0097F477 /* TruckModelTests.swift */; };
 		57BFF1BE2C1ECF400097F477 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57BFF1BD2C1ECF400097F477 /* GoogleService-Info.plist */; };
 		57BFF1C12C1ECF970097F477 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 57BFF1C02C1ECF970097F477 /* FirebaseAnalytics */; };
@@ -426,7 +425,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				57A393722C1EED4A0003F244 /* 87.png in Resources */,
-				57A393782C1EED4A0003F244 /* ci_pre_xcodebuild.sh in Resources */,
 				57A393732C1EED4A0003F244 /* 114.png in Resources */,
 				57A393752C1EED4A0003F244 /* 180.png in Resources */,
 				57A3936D2C1EED4A0003F244 /* 40.png in Resources */,
@@ -676,7 +674,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"FoodTruck/Preview Content\"";
 				DEVELOPMENT_TEAM = 6SZ9MGTL76;
 				ENABLE_PREVIEWS = YES;
@@ -710,7 +708,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"FoodTruck/Preview Content\"";
 				DEVELOPMENT_TEAM = 6SZ9MGTL76;
 				ENABLE_PREVIEWS = YES;
