@@ -6,7 +6,7 @@
 if [[ -n $CI_PULL_REQUEST_NUMBER && $CI_XCODEBUILD_ACTION = 'archive' ]];
 then
     echo "Setting Food Truck Beta App Icon"
-    APP_ICON_PATH=$CI_WORKSPACE/Shared/Assets.xcassets/AppIcon.appiconset
+    APP_ICON_PATH=$CI_WORKSPACE/FoodTruck/Assets.xcassets/AppIcon.appiconset
     echo $APP_ICON_PATH
     
     # Remove existing App Icon
