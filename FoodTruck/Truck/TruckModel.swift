@@ -7,6 +7,7 @@
 
 import SwiftUI
 import FirebaseAnalytics
+import FirebaseCrashlytics
 
 @Observable
 final class FoodTruckModel {
@@ -40,9 +41,15 @@ final class FoodTruckModel {
     }
     
     func isFavourite(donut: Donut) -> Bool {
+        Crashlytics.crashlytics().log("checking_favourite")
+//        let firstFavouriteDonut = favouriteDonuts.values.first!
+
         if let _ = favouriteDonuts[donut.id] {
+            Crashlytics.crashlytics()
+                .record(error: NSError.init(domain: "SomeDomain", code: 345))
             return true
         }
+        Crashlytics.crashlytics().log("favourite_not_found")
         return false
     }
     
@@ -57,9 +64,11 @@ final class FoodTruckModel {
         )
         if isFavourite(donut: donut) {
             favouriteDonuts.removeValue(forKey: donut.id)
+            Crashlytics.crashlytics().log("removed_favourite")
             return
         }
         favouriteDonuts[donut.id] = donut
+        Crashlytics.crashlytics().log("added_favourite")
     }
     
     func settingsButtonTapped() {
@@ -85,6 +94,7 @@ final class FoodTruckModel {
     
     func configureFirebase() {
         Analytics.setUserID(userID)
+        Crashlytics.crashlytics().setUserID(userID)
     }
     
     func handlePremiumAnalytics() {
